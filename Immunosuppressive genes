@@ -1,0 +1,14 @@
+cell type of Immunosuppressive
+B cell,
+Treg,
+
+
+
+
+
+immunosuppressivemarker=c('CD274', #(PD-L1)
+    'PDCD1LG2',# (PD-L2)
+    'IDO1', #which inhibits T cell cytotoxic activity and promotes differentiation into Tregs
+    'CD276',# B7-H3, to augment Tregs and inhibit T cell responses
+     'TNFRSF14','LGALS9','VISTA',# known to inhibit T cells 
+     )
