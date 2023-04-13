@@ -1,0 +1,8 @@
+fibro=c("COL1A1",#all,but not special
+            "DCN","LUM",'FGF7',"PDGFRA","FAP",#matrix fobro
+            "CXCL12","CXCL13",#inflamatory CAF
+            "ACTA2","PDGFRB","RGS5",##myCAF ACTA2为αSMA
+             "MCAM"##vCAF 
+        )#fibo
+        
+        
