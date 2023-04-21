@@ -1,8 +1,9 @@
 fibro=c("COL1A1",#all,but not special
-            "DCN","LUM",'FGF7',"PDGFRA","FAP",#matrix fobro
-            "CXCL12","CXCL13",#inflamatory CAF
-            "ACTA2","PDGFRB","RGS5",##myCAF ACTA2为αSMA
-             "MCAM"##vCAF 
-        )#fibo
-        
-normal_fibroblast=c('DCN')
+         'IL6', 'IL1B', 'COX2',"CXCL12","CXCL13",#inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
+        "ACTA2",'TAGLN','MYH11','CNN1',"PDGFRB","RGS5",##myCAF ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
+        'COL1A1',"LUM",'FGF7',"PDGFRA","FAP",'MMP2',#matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
+        "MCAM",'CD34','PECAM1',##vCAF 
+        "HLA-DRA","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
+        'PLIN2','FABP4' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
+         )#fibo
+normal_fibroblast=c('DCN','THY1')
