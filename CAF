@@ -5,4 +5,4 @@ fibro=c("COL1A1",#all,but not special
              "MCAM"##vCAF 
         )#fibo
         
-        
+normal_fibroblast=c('DCN')
