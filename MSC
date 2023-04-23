@@ -1,0 +1,8 @@
+MSCmarker=c('LEPR',
+  'CD44',
+  'NT5E',#CD73
+  'ENG', #CD105, but higher in endothelial
+  'THY1', #CD90 MSC,pericite, and others
+  'MCAM', #CD146 MSC, pericite
+  'NGFR' #CD271 MSC and Cancer stem cell
+   )
