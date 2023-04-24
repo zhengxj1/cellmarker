@@ -1,0 +1,2 @@
+endothelial=c("PECAM1","CD34","VWF","CDH5","PLVAP")##endo
+scRNA_harmony$endothelial<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% endothelial,],2,mean)
