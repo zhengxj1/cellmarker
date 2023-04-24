@@ -17,3 +17,5 @@ CAF=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
         'PLIN2','FABP4' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
          )#fibo
 normal_fibroblast=c('DCN','THY1')
+
+Osteocyte=c("ALPL")
