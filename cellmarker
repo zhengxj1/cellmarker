@@ -1,0 +1,61 @@
+epithelial=c("EPCAM","KRT8","KRT18","KRT5")
+endothelial=c("PECAM1","CD34","VWF","CDH5","PLVAP")##endo
+pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #perivascular-like cells,maybe also called CAF
+
+lymphocyte=c("PTPRC","CD45",#immune
+             "CD3D","CD3E", ##T
+                "CCR7","CD4",#part CD4 native T
+                "CD8A",#part CD8 T
+                'FOXP3',#Regulatory T
+             "CD79A",'CD79B',"CD37","CD19",#B cell sure,CD19 in part
+                'MS4A1',##CD20+ B
+                "CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7",#Plasma B
+                "CD74",#B and DC
+             "NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
+              )
+# B cell: MS4A1, CD37
+# plasma: CD79A, CD38, MZB1, SSR4
+B=c('MS4A1',##CD20+ B
+   "IGHD","FCER2","TCL1A","IL4R",#naïve B cells (CD20+, CD27−, and CD38−)
+   "CD27","AIM2","TNFRSF13B",#memory B cells (CD20+, CD27+, and CD38–),
+   "S1PI2","LRMP","SUGCT","MME","MKI67","AICDA",##germinal center (GC) B cells (CD20+, CD27+, CD38+, and CD138−)
+   'SDC1',"CD79A",'IGHG1', 'MZB1',"SLAMF7", #CD138+ plasma cells
+   "IGHA1","IGHG1"##IgA plasma IgG plasma cells
+   )
+myeloidcell=c("CD68",#mono
+                  "CD14",##CD14 mono
+                  "FCGR3A",##FCGR3A Mono and part NK
+              "C1QA",'APOE',"CD163",#Macrophage
+              'CST3',"LYZ",#DC and mono
+              "CD1C",'FCER1A','HLA-DRA','HLA-DPB1','HLA-DPA1','IRF7',#DC
+                  'LILRA4',#pDC
+              "CD74",##DC and B
+              'KIT','TPSAB1','TPSB2','CPA3','HPGDS',#Mast
+              "ADAM8","AZU1" #Neutrophil
+              )
+neutrophil=c('AZU1','CSF3R','S100A8','S100A9','TPSAB1','CPA3','KIT')
+mast=c('CSF1R','CSF2R','CSF3R','CXCL8','CXCL2','KIT')
+macrophage=c('CD68','CD14','FCGR3A','MARCO','C1QC','SPP1')
+monocyte=c('FCN1','CD163','LILRA4', 'CLEC9A', 'CD1C', 'LAMP3')
+##"ITGAX","CSF1R" not for myeloid
+fibro=c("COL1A1",#all,but not special
+            "DCN","LUM",'FGF7',"PDGFRA","FAP",#matrix fobro
+            "CXCL12","CXCL13",#inflamatory CAF
+            "ACTA2","PDGFRB","RGS5",##myCAF 
+             "MCAM"##vCAF 
+        )#fibo
+
+
+proliferatingfeature=c("MKI67",'TOP2A')
+mylblast=c("MYLPF")
+muscle="NCAM1"
+general=c("RUNX2","COL1A1","IBSP","ACAN","COL2A1",'ALPL','SPP1',#Osteoblastic and chondroblastic cells 
+          "CTSK","MMP9",
+          "DCN","LUM",
+          "CD3D","NKG7",
+          "CD14","C1QA",
+          "CD79A",
+          "PECAM1","VWF",
+          "CXCL12","SFRP2",
+          "ACTA2","RGS5", "PDGFRB"
+          )
