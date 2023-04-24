@@ -17,3 +17,4 @@ T_cell=c("CD3D","CD3E", ##T
 NK_cell=c("NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
   )
 B_cell=c('MS4A1',"CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7")
+Plasma_cell=c("CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7")
