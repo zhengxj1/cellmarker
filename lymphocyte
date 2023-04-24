@@ -1,0 +1,19 @@
+lymphocyte=c("PTPRC","CD45",#immune
+  "CD3D","CD3E", ##T
+  "CCR7","CD4",#part CD4 native T
+  "CD8A",#part CD8 T
+  'FOXP3',#Regulatory T
+  "CD79A",'CD79B',"CD37","CD19",#B cell sure,CD19 in part
+  'MS4A1',##CD20+ B
+  "CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7",#Plasma B
+  #"CD74",#B and DC
+  "NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
+  )
+T_cell=c("CD3D","CD3E", ##T
+  "CCR7","CD4",#part CD4 native T
+  "CD8A",#part CD8 T
+  'FOXP3'#Regulatory 
+  ) 
+NK_cell=c("NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
+  )
+B_cell=c('MS4A1',"CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7")
