@@ -1,4 +1,4 @@
-MSCmarker=c('LEPR',
+MSC=c('LEPR',
   'CD44',
   'NT5E',#CD73
   'ENG', #CD105, but higher in endothelial
@@ -6,3 +6,4 @@ MSCmarker=c('LEPR',
   'MCAM', #CD146 MSC, pericite
   'NGFR' #CD271 MSC and Cancer stem cell
    )
+
