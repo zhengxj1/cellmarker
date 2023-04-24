@@ -1,0 +1,17 @@
+Osteoclast=c( "ACP5", "CTSK", "MMP9") #Osteoclasts与巨噬细胞有共同起源，髓系祖细胞-单核细胞，可表达髓系标记。
+##Myeloid_progenitor=c('CEBPA','CSF2RB')区分osteoclast AND macrophage
+Meloidcell=c("CD68",#mono
+                  "CD14",##CD14 mono
+                  "FCGR3A",##FCGR3A Mono and part NK
+              "C1QA",'APOE',"CD163",#Macrophage
+              'CST3',"LYZ",#DC and mono
+              "CD1C",'FCER1A','HLA-DRA','HLA-DPB1','HLA-DPA1','IRF7',#DC
+                  'LILRA4',#pDC
+              "CD74",##DC and B
+              'KIT','TPSAB1','TPSB2','CPA3','HPGDS',#Mast
+              "ADAM8","AZU1" #Neutrophil
+              )
+Neutrophil=c('AZU1','CSF3R','S100A8','S100A9','TPSAB1','CPA3','KIT')
+Mast_cell=c('CPA3','KIT') ## CXCL8,CXCL2,髓系（中性粒、肥大）、内皮均可炎性状态释放；CSF1R髓系祖细胞起源的细胞标志物
+Macrophage=c('CD68','CD14','FCGR3A','MARCO','C1QC','SPP1')
+Monocyte=c('FCN1','CD163','LILRA4', 'CLEC9A', 'CD1C', 'LAMP3')
