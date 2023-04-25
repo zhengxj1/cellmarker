@@ -1,0 +1,3 @@
+Osteoblastic_OS=c("RUNX2","COL1A1","CDH11","IBSP")
+Chondroblastic_OS=c("ACAN","COL2A1","SOX9","PTH1R")#Chondroblastic cells
+Osteocyte=c('ALPL','SPP1',"AHSA1","SOST","DMP1")#Osteocyte
