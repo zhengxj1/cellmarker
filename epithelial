@@ -1,2 +1,2 @@
-epithelial=c("EPCAM","KRT8","KRT18","KRT5","CDH1")
-scRNA_harmony$epithelial<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% epithelial,],2,mean)
+Epithelial_cell=c("EPCAM","KRT8","KRT18","KRT5","CDH1")
+scRNA_harmony$Epithelial_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Epithelial_cell,],2,mean)
