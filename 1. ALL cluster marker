@@ -108,7 +108,7 @@ for (i in 1:length(cell_types)) {
 scRNA_harmony@meta.data$ImmuneCells <- apply(scRNA_harmony@meta.data[,c("Myeloid_cell","Lymphocyte","T_cell","B_cell","NK_cell","Plasma_cell")],1,max)
 scRNA_harmony@meta.data$OS <- apply(scRNA_harmony@meta.data[,c("Osteoblastic_OS","Chondroblastic_OS","Osteocyte")],1,max)
 scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs","Normal_fibroblast")],1,max)
-CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "T_cell", "B_cell",""NK_cell,
+CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "T_cell", "B_cell","NK_cell",
   "Mesenchymal_stromal_cell","Pericyte","OS","Osteoblastic_OS","Chondroblastic_OS","Osteocyte")
   
 M_T_Types <- c("ImmuneCells","Endothelial_cell","Epithelial_cell", "Osteoclast", "Mesenchymal_stromal_cell","Pericyte","OS")
