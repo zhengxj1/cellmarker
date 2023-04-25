@@ -1,0 +1,8 @@
+scRNA_harmony$idents=Idents(scRNA_harmony)
+DimPlot(scRNA_harmony,reduction = "umap",cols = mycolor[[1]][-1],dims = c(1, 2),label = T)
+p <-FeaturePlot(scRNA_harmony,reduction = "umap",features =  Types,cols = c("gray","orange","orange","red","red"),combine = FALSE)
+for(i in 1:length(p)) {
+  p[[i]] <- p[[i]] + NoLegend() + NoAxes()
+}
+Vln_p <- VlnPlot(scRNA_harmony, features= Types,group.by = "RNA_snn_res.0.8",
+                 pt.size = 0,cols=.cluster_cols[1:length(unique(scRNA_harmony@meta.data$RNA_snn_res.0.8))],combine = F)
