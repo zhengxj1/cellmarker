@@ -87,6 +87,7 @@ names(cell_types) <- c("Endothelial_cell", "Epithelial_cell", "Osteoclast","Myel
                     "Lymphocyte","T_cell","NK_cell","B_cell","Plasma_cell","MSCs",
                     "Pericyte","CAFs","Normal_fibroblast","Osteoblastic_OS",
                     "Chondroblastic_OS","Osteocyte","Proliferating_cell")
+scRNA_harmony@meta.data=select(scRNA_harmony@meta.data,-matches(names(cell_types)))
 for (i in 1:length(cell_types)) {
   cell_type_name <- names(cell_types)[i]
   cell_type_genes <- cell_types[[i]]
@@ -94,6 +95,8 @@ for (i in 1:length(cell_types)) {
   length=length(scRNA_harmony@meta.data)
   data[,length+1]=apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% cell_type_genes,], 2,function(x) {
     sorted_nums <- sort(x, decreasing = TRUE)
+    len_75 <- round(length(sorted_nums) * 0.75)
+    sorted_nums <- sorted_nums[1:len_75]
         if (length(sorted_nums ) < 5) {
       mean(sorted_nums)
     } 
@@ -108,9 +111,9 @@ for (i in 1:length(cell_types)) {
 
 scRNA_harmony@meta.data$ImmuneCells <- apply(scRNA_harmony@meta.data[,c("Myeloid_cell","Lymphocyte","T_cell","B_cell","NK_cell","Plasma_cell")],1,max)
 scRNA_harmony@meta.data$OS <- apply(scRNA_harmony@meta.data[,c("Osteoblastic_OS","Chondroblastic_OS","Osteocyte")],1,max)
-scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs","Normal_fibroblast")],1,max)
-CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "T_cell", "B_cell","NK_cell",
-  "Mesenchymal_stromal_cell","Pericyte","OS","Osteoblastic_OS","Chondroblastic_OS","Osteocyte","Proliferating_cell")
+scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs")],1,max) ##"Normal_fibroblast不放，太容易误判
+CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell", "T_cell", "B_cell","NK_cell","Plasma_cell",
+  "Pericyte","Osteoblastic_OS","Chondroblastic_OS","Osteocyte","Lymphocyte","OS","Mesenchymal_stromal_cell","Proliferating_cell")
   
 M_T_Types <- c("ImmuneCells","Endothelial_cell","Epithelial_cell", "Osteoclast", "Mesenchymal_stromal_cell","Pericyte","OS")
 ImmTypes <-  c("MyeloidCells","T_cell", "B_cell")
