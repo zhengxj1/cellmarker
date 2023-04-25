@@ -95,9 +95,9 @@ for (i in 1:length(cell_types)) {
   length=length(scRNA_harmony@meta.data)
   data[,length+1]=apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% cell_type_genes,], 2,function(x) {
     sorted_nums <- sort(x, decreasing = TRUE)
-    len_75 <- round(length(sorted_nums) * 0.75)
+    len_75 <- round(length(sorted_nums) * 0.50)
     sorted_nums <- sorted_nums[1:len_75]
-        if (length(sorted_nums ) < 5) {
+        if (length(sorted_nums ) < 100) {
       mean(sorted_nums)
     } 
     else {
