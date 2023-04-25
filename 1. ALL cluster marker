@@ -87,5 +87,5 @@ scRNA_harmony@meta.data$ImmuneCells <- apply(scRNA_harmony@meta.data[,c("Myeloid
 scRNA_harmony@meta.data$OS <- apply(scRNA_harmony@meta.data[,c("Osteoblastic_OS","Chondroblastic_OS","Osteocyte")],1,max)
 scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs","Normal_fibroblast")],1,max)
 CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "Mesenchymal_stromal_cell","Pericyte","OS")
-ThreeTypes <- c("ImmuneCells","EpithelialCells", "StromalCells")
-ImmTypes <-  c("MyeloidCells","TCells", "BCells")
+M_T_Types <- c("ImmuneCells","Endothelial_cell","Epithelial_cell", "Osteoclast", "Mesenchymal_stromal_cell","Pericyte","OS")
+ImmTypes <-  c("MyeloidCells","T_cell", "B_cell")
