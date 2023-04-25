@@ -1,0 +1,91 @@
+#########################上皮及内皮
+Endothelial_cell=c("PECAM1","CD34","VWF","CDH5","PLVAP")##endo
+Epithelial_cell=c("EPCAM","KRT8","KRT18","KRT5","CDH1")
+
+###########################髓系来源
+Osteoclast=c( "ACP5", "CTSK", "MMP9") #Osteoclasts与巨噬细胞有共同起源，髓系祖细胞-单核细胞，可表达髓系标记。
+
+##Myeloid_progenitor=c('CEBPA','CSF2RB')区分osteoclast AND macrophage
+Myeloid_cell=c("CD68",#mono
+                  "CD14",##CD14 mono
+                  "FCGR3A",##FCGR3A Mono and part NK
+              "C1QA",'APOE',"CD163",#Macrophage
+              'CST3',"LYZ",#DC and mono
+              "CD1C",'FCER1A','HLA-DRA','HLA-DPB1','HLA-DPA1','IRF7',#DC
+                  'LILRA4',#pDC
+              "CD74",##DC and B
+              'KIT','TPSAB1','TPSB2','CPA3','HPGDS',#Mast
+              "ADAM8","AZU1" #Neutrophil
+              )
+
+###############################淋巴系来源
+Lymphocyte=c("PTPRC",##"CD45",#immune
+  "CD3D","CD3E", ##T
+  "CCR7","CD4",#part CD4 native T
+  "CD8A",#part CD8 T
+  'FOXP3',#Regulatory T
+  "CD79A",'CD79B',"CD37","CD19",#B cell sure,CD19 in part
+  'MS4A1',##CD20+ B
+  "CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7",#Plasma B
+  #"CD74",#B and DC
+  "NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
+  )
+T_cell=c("CD3D","CD3E", ##T
+  "CCR7","CD4",#part CD4 native T
+  "CD8A",#part CD8 T
+  'FOXP3'#Regulatory 
+  ) 
+NK_cell=c("NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
+  )
+B_cell=c('MS4A1',"CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7")
+Plasma_cell=c("CD79A",'IGHG1', 'MZB1', 'SDC1',"SLAMF7")
+
+###############################间充质来源
+MSCs=c('LEPR',
+  'CD44',
+  'NT5E',#CD73
+  'ENG', #CD105, but higher in endothelial
+  'THY1', #CD90 MSC,pericite, and others
+  'MCAM', #CD146 MSC, pericite
+  'NGFR' #CD271 MSC and Cancer stem cell
+   )
+
+Pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #
+
+CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
+        "ACTA2",'TAGLN','MYH11','CNN1',"PDGFRB","FN1",##myoCAF major type ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
+        'IL6', 'IL1B', 'COX2',"CXCL12","CXCL13",#inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
+        "LUM",'FGF7',"PDGFRA","FAP",#matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
+        "MCAM",'CD34','PECAM1',##vCAF 
+        "HLA-DRA","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
+        'PLIN2','FABP4' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
+         )#fibo
+Normal_fibroblast=c('COL1A1','DCN','THY1')
+Osteoblastic_OS=c("RUNX2","COL1A1","CDH11","IBSP")
+Chondroblastic_OS=c("ACAN","COL2A1","SOX9","PTH1R")#Chondroblastic cells
+Osteocyte=c('ALPL','SPP1',"AHSA1","SOST","DMP1")#Osteocyte
+
+###############################################汇总
+scRNA_harmony$Endothelial_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% Endothelial_cell,],2,mean)
+scRNA_harmony$Epithelial_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Epithelial_cell,],2,mean)
+scRNA_harmony$Osteoclast<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Osteoclast,],2,mean)
+scRNA_harmony$Myeloid_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Myeloid_cell,],2,mean)
+scRNA_harmony$Lymphocyte<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% Lymphocyte,],2,mean)
+scRNA_harmony$T_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% T_cell,],2,mean)
+scRNA_harmony$B_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%B_cell,],2,mean)
+scRNA_harmony$NK_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%NK_cell,],2,mean)
+scRNA_harmony$Plasma_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Plasma_cell,],2,mean)
+scRNA_harmony$MSCs<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%MSCs,],2,mean)
+scRNA_harmony$Pericyte<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Pericyte,],2,mean)
+scRNA_harmony$CAFs<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in% CAFs,],2,mean)
+scRNA_harmony$Osteoblastic_OS<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Osteoblastic_OS,],2,mean)
+scRNA_harmony$Chondroblastic_OS<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Chondroblastic_OS,],2,mean)
+scRNA_harmony$Osteocyte<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Osteocyte,],2,mean)
+scRNA_harmony$Normal_fibroblast<- apply(scRNA_harmony@assays$RNA@data[rownames(scRNA_harmony@assays$RNA@data) %in%Normal_fibroblast,],2,mean)
+
+scRNA_harmony@meta.data$ImmuneCells <- apply(scRNA_harmony@meta.data[,c("Myeloid_cell","Lymphocyte","T_cell","B_cell","NK_cell","Plasma_cell")],1,max)
+scRNA_harmony@meta.data$OS <- apply(scRNA_harmony@meta.data[,c("Osteoblastic_OS","Chondroblastic_OS","Osteocyte")],1,max)
+scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs","Normal_fibroblast")],1,max)
+CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "Mesenchymal_stromal_cell","Pericyte","OS")
+ThreeTypes <- c("ImmuneCells","EpithelialCells", "StromalCells")
+ImmTypes <-  c("MyeloidCells","TCells", "BCells")
