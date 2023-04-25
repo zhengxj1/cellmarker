@@ -65,6 +65,7 @@ Osteoblastic_OS=c("RUNX2","COL1A1","CDH11","IBSP")
 Chondroblastic_OS=c("ACAN","COL2A1","SOX9","PTH1R")#Chondroblastic cells
 Osteocyte=c('ALPL','SPP1',"AHSA1","SOST","DMP1")#Osteocyte
 
+Proliferating_cell=c("MKI67","TOP2A")
 ###############################################汇总
 cell_types <- list(Endothelial_cell,
   Epithelial_cell,
@@ -81,11 +82,11 @@ cell_types <- list(Endothelial_cell,
   Normal_fibroblast,
   Osteoblastic_OS,
   Chondroblastic_OS,
-  Osteocyte)
+  Osteocyte,Proliferating_cell)
 names(cell_types) <- c("Endothelial_cell", "Epithelial_cell", "Osteoclast","Myeloid_cell",
                     "Lymphocyte","T_cell","NK_cell","B_cell","Plasma_cell","MSCs",
                     "Pericyte","CAFs","Normal_fibroblast","Osteoblastic_OS",
-                    "Chondroblastic_OS","Osteocyte")
+                    "Chondroblastic_OS","Osteocyte","Proliferating_cell")
 for (i in 1:length(cell_types)) {
   cell_type_name <- names(cell_types)[i]
   cell_type_genes <- cell_types[[i]]
@@ -109,7 +110,7 @@ scRNA_harmony@meta.data$ImmuneCells <- apply(scRNA_harmony@meta.data[,c("Myeloid
 scRNA_harmony@meta.data$OS <- apply(scRNA_harmony@meta.data[,c("Osteoblastic_OS","Chondroblastic_OS","Osteocyte")],1,max)
 scRNA_harmony@meta.data$Mesenchymal_stromal_cell <- apply(scRNA_harmony@meta.data[,c("MSCs","CAFs","Normal_fibroblast")],1,max)
 CommonTypes <- c("Endothelial_cell","Epithelial_cell", "Osteoclast","Myeloid_cell","Lymphocyte", "T_cell", "B_cell","NK_cell",
-  "Mesenchymal_stromal_cell","Pericyte","OS","Osteoblastic_OS","Chondroblastic_OS","Osteocyte")
+  "Mesenchymal_stromal_cell","Pericyte","OS","Osteoblastic_OS","Chondroblastic_OS","Osteocyte","Proliferating_cell")
   
 M_T_Types <- c("ImmuneCells","Endothelial_cell","Epithelial_cell", "Osteoclast", "Mesenchymal_stromal_cell","Pericyte","OS")
 ImmTypes <-  c("MyeloidCells","T_cell", "B_cell")
