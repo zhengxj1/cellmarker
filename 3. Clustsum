@@ -1,0 +1,29 @@
+scRNA_harmony$idents=Idents(scRNA_harmony)
+ClusterSum <- sapply(split(scRNA_harmony@meta.data[,CommonTypes],scRNA_harmony@meta.data$idents),function(x){apply(x,2,mean)}) %>% t %>% data.frame %>%
+  dplyr::mutate(Cluster=rownames(.))
+
+ClusterSum[,1:c(ncol(ClusterSum)-1)] <- apply(ClusterSum[,1:c(ncol(ClusterSum)-1)],2,function(x){(x)})
+ClusterSum$ClusterBelong <- apply(ClusterSum[,1:c(ncol(ClusterSum)-1)],1,function(x){match(max(x),x)})
+ClusterSum$Clusterdefine =c("cell type")
+x=function(x){CommonTypes[as.numeric(x)]}
+for (i in 1:length(ClusterSum$Clusterdefine)){
+ClusterSum$Clusterdefine[i]=x(ClusterSum$ClusterBelong[i])
+}
+
+ClusterDefineP  <- ggplot(ClusterSum.m,aes(y=Cluster,x=CommonTypes))+
+  geom_tile(aes(fill=ClusterScore))+
+  scale_x_discrete(limit=CommonTypes)+
+  scale_y_discrete(limit=ClusterSum$Cluster)+
+  #coord_fixed(ratio = 2)+
+  scale_fill_gradientn(colors = colorRampPalette(c("gray","orange","red"),space = "rgb")(20),guide = F)+
+  theme(panel.background=element_blank(),
+        panel.grid=element_blank(),
+        axis.title=element_blank(),
+        axis.text.x=element_text(size=8,colour = "black",angle=90,hjust=1,vjust=0.5),
+        axis.text.y=element_text(size=8),
+        axis.ticks=element_blank())
+ 
+ 
+ 
+ ALLGENE=unique(unlist(cell_types))
+ 
