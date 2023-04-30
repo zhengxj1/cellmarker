@@ -1,4 +1,4 @@
-CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
+CAFs=c("COL1A1",""VIM,#all,but not special   'MMP2'不能鉴定亚型
         "ACTA2",'TAGLN','MYH11','CNN1',"PDGFRB","FN1",##myoCAF major type ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
         'IL6', 'IL1B', 'COX2',"CXCL12","CXCL13",#inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
         "LUM",'FGF7',"PDGFRA","FAP",#matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
