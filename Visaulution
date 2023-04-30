@@ -1,0 +1,35 @@
+########### Heatmap#########################################################
+library(ComplexHeatmap)
+library(RColorBrewer)
+library(ComplexHeatmap)
+allmarkers=FindAllMarkers(scRNA_harmony, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+scRNA_harmony$seurat_clusters=Idents(scRNA_harmony)
+top5 <- allmarkers%>% group_by(cluster) %>% top_n(n = 5, wt = avg_log2FC)
+mean_gene_exp <- AverageExpression(scRNA_harmony,
+                                   features = top5$gene,assays = "RNA",
+                                   group.by = 'seurat_clusters',
+                                   slot = 'data') %>%data.frame() %>%as.matrix()
+# add colnames
+colnames(mean_gene_exp) <- paste('clsuter ',0:7,sep = '')
+# Z-score
+htdf <- t(scale(t(mean_gene_exp),scale = T,center = T))
+# color
+col_fun =colorRamp2::colorRamp2(c(-2, 0, 2), c("#0099CC", "white", "#CC0033"))
+# top annotation
+anno_col <- brewer.pal(8, "Paired")
+names(anno_col) <- paste('clsuter ',0:7,sep = '')
+column_ha = HeatmapAnnotation(cluster = colnames(htdf), col = list(cluster = anno_col))
+Heatmap(htdf,
+        name = "Z-score",
+        cluster_columns = F,cluster_rows = F,
+        row_title = "Cluster top 5 Marker genes",
+        column_title = "Clusters",
+        row_names_gp = gpar(fontface = 'italic',fontsize = 10),
+        row_names_side = 'left',
+        border = T,
+        rect_gp = gpar(col = "white", lwd = 1),
+        column_names_side = 'top',
+        column_names_rot = 45,
+        top_annotation = column_ha,
+        # column_split = paste('clsuter ',0:8,sep = ''),
+        col = col_fun)
