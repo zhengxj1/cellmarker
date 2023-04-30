@@ -7,6 +7,6 @@ CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
         'PLIN2','FABP4' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
          )#fibo
 Normal_fibroblast=c('COL1A1','DCN','THY1')
-proliferating=("MKI67","TOP2A")
+proliferating=c("MKI67","TOP2A")
 general=c(CAFs,Normal_fibroblast,proliferating)
 DotPlot(scRNA_harmony,features =unique(general),cols = c("blue","#E64B35FF"))+theme(axis.text = element_text(angle = 50, vjust = 1, hjust = 1))
