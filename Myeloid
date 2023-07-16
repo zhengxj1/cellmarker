@@ -9,9 +9,22 @@ Meloidcell=c("CD68",#mono
                   'LILRA4',#pDC
               "CD74",##DC and B
               'KIT','TPSAB1','TPSB2','CPA3','HPGDS',#Mast
-              "ADAM8","AZU1" #Neutrophil
+              'CSF3R',"ADAM8","AZU1" #Neutrophil
               )
 Neutrophil=c('AZU1','CSF3R','S100A8','S100A9','TPSAB1','CPA3','KIT')
 Mast_cell=c('KIT','IL1RL1','MS4A2','CPA3') ## CXCL8,CXCL2,髓系（中性粒、肥大）、内皮均可炎性状态释放；CSF1R髓系祖细胞起源的细胞标志物
 Macrophage=c('CD68','CD14','FCGR3A','MARCO','C1QC','SPP1')
 Monocyte=c('FCN1','CD163','LILRA4', 'CLEC9A', 'CD1C', 'LAMP3')
+
+
+
+Activated DCs：CCR7 FSCN1
+cDC1 :XCR1 and CLEC9A
+cDC2 : FCER1A and CD1C
+
+Macrophage:
+THBS1(M1-like TAMs) macrophages 
+VCAN C1QC+ macrophages 
+MRC1− macrophages 
+SPP1 macrophages  C1QC、MRC1、STAT1和PPARG(巨噬细胞极化相关基因)
+骨髓细胞亚群标志物CD14、CD206 (MRC1编码)、CD209和CD13 (ANPEP编码)
