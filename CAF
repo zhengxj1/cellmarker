@@ -13,3 +13,7 @@ pericyte=c("ACTA2","PDGFRA","RGS5","MCAM","NG2","COL18A1")
 general=c(CAFs,Normal_fibroblast,pericyte,proliferating)
 
 DotPlot(scRNA_harmony,features =unique(general),cols = c("blue","#E64B35FF"))+theme(axis.text = element_text(angle = 50, vjust = 1, hjust = 1))
+
+
+
+"ACTA2",'TAGLN','MYH11'标记的myoCAF可以进一步分为DES+ myofibroblasts and MFAP5+ myofibroblasts
