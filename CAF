@@ -38,3 +38,22 @@ DotPlot(scRNA_harmony,features =unique(general),cols = c("blue","#E64B35FF"))+th
 
 
 "ACTA2",'TAGLN','MYH11'标记的myoCAF可以进一步分为DES+ myofibroblasts and MFAP5+ myofibroblasts
+
+FAP成纤维高表达FAP, MMP1, and MMP3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
