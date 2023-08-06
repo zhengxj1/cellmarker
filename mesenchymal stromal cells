@@ -19,4 +19,6 @@ CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
          )#fibo
 Normal_fibroblast=c('COL1A1','DCN','THY1')
 
+MSCmarker=unique(c(MSCs,Pericyte,CAFs,Normal_fibroblast))
+
 Osteocyte=c("ALPL")
