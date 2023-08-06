@@ -11,7 +11,7 @@ Pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #perivascular-like cells,ma
 CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
         "MKI67",#proliferating CAF
         "ACTA2",'MYH11','TAGLN','CNN1',"PDGFRB","FN1",##myCAF 可继续分 DES+ and MFAP5+ myofibroblasts ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
-        'IL6', 'IL1B', 'COX2',"CXCL12","CXCL13",#inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
+        'IL6', 'IL1B', "CXCL12","CXCL13",#'COX2',inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
         "FAP","LUM",'FGF7',"PDGFRA",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
         "MCAM",'CD34','PECAM1',##vCAF 
         "HLA-DRA","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
