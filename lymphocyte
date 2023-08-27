@@ -31,7 +31,11 @@ NK_marker=c("NKG7","GNLY",'CD247',"GZMB" ,'KLRD1',#NK sure,KLRD1 in part
 "DNAJB1",#NK DNAJB1
 "NR4A3", "NR4A2", "SLC7A5"#NK NR4A3
   )
-
+T_marker=c(CD3D","CD3E", ##T
+  "CCR7","CD4",#part CD4 native T
+  "CD8A",#part CD8 T
+  'FOXP3'#Regulatory 
+)
 
 
 
