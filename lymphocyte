@@ -10,10 +10,16 @@ lymphocyte=c("PTPRC","CD45",#immune
   "NKG7","GNLY",'CD247',"GZMB" ,'KLRD1'#NK sure,KLRD1 in part
   )
 T_cell=c("CD3D","CD3E", ##T
-  "CCR7","CD4",#part CD4 native T
+  "CCR7","CD4","IL7R",#part CD4 native T
   "CD8A",#part CD8 T
-  'FOXP3'#Regulatory 
+  'FOXP3',"CTLA4","TIGIT",#Regulatory Treg
+"HSPA1A","HSPA1B",##T细胞应激状态（TSTR）在原发性肿瘤或转移瘤中高度富集，主要定位于肿瘤缺氧微环境。尤其是多种癌症类型中的侵袭性表型
+"NKG7","GZMB","GNLY",#nkt
+"CXCL13",#CXCL13T
+"TOP2A","MKI67"
   ) 
+
+
 NK_marker=c("NKG7","GNLY",'CD247',"GZMB" ,'KLRD1',#NK sure,KLRD1 in part
 "NCAM1", "FCGR3A",
  ##CD56a亚群 NCAM1,
