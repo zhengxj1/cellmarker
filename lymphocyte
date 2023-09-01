@@ -15,11 +15,12 @@ T_cell=c("CD3D","CD3E", ##T
   "SELL", "TGF7", "CCR7", "LEF1",#Naive T
   "CTLA4", "CD274", "TIGIT", "LAG3", "TIM3",#Exhausted T CD274是PD1
   "NKG7", "GNLY", "PRF1", "GZMK", "GZMH",#Cytotoxic T
+  'KLRB1',#Cytotoxic,但弱于"GZMK", "GZMH"
   'FOXP3',"CTLA4","TIGIT","IKZF2", "IL2RA",#Regulatory Treg
   "TRDC", "TRDV2", "KLRC2",#γδ T 依据GZMK分2型
   "HSPA1A","HSPA1B",##T细胞应激状态（TSTR）在原发性肿瘤或转移瘤中高度富集，主要定位于肿瘤缺氧微环境。尤其是多种癌症类型中的侵袭性表型
   "CXCL13",#CXCL13T Dysfunctional T
-"TOP2A","MKI67"
+"TOP2A","MKI67"#Proliferating T
   ) 
 
 
