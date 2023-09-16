@@ -3,8 +3,8 @@ scRNA_harmony$Endothelial_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(sc
 
 
 endothelial=c("PECAM1","CDH5","CD34","VWF","PLVAP",##general ECmarker
-             " CCL21", "PROX1",#lymphatic ECs; LECs
+             "CCL21", "PROX1",#lymphatic ECs; LECs
              "HEY1", "IGFBP3",  #arteries
-             "CD36"," CA4",#capillaries 毛细血管
+             "CD36","CA4",#capillaries 毛细血管
              "ACKR1"#veins
               )##endo
