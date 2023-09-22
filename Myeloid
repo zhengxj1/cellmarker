@@ -1,16 +1,45 @@
 Osteoclast=c( "ACP5", "CTSK", "MMP9") #Osteoclasts与巨噬细胞有共同起源，髓系祖细胞-单核细胞，可表达髓系标记。
 ##Myeloid_progenitor=c('CEBPA','CSF2RB')区分osteoclast AND macrophage
-Meloidcell=c("CD68",#mono
-                  "CD14",##CD14 mono
-                  "FCGR3A",##FCGR3A Mono and part NK
-              "C1QA",'APOE',"CD163",#Macrophage
-              'CST3',"LYZ",#DC and mono
-              "CD1C",'FCER1A','HLA-DRA','HLA-DPB1','HLA-DPA1','IRF7',#DC
-                  'LILRA4',#pDC
-              "CD74",##DC and B
-              'KIT','TPSAB1','TPSB2','CPA3','HPGDS',#Mast
-              'CSF3R',"ADAM8","AZU1" #Neutrophil
-              )
+Meloidcell=list(
+  Mono=c("VCAN",'S100A8','S100A9','IL1B','TIMP1','EREG',#mono
+                  "CD14","LYZ",##CD14 mono
+                  "FCGR3A","MS4A7"),##CD16 Mono and part NK
+  Mac=unique(c("TREM2","FOLR2",
+    "C1QA",'C1QB',
+               'APOE','APOC1',"CD163",'FCGR1A',#lipid-associated macrophages 
+               "SPP1",
+               'CXCL10',#CXCL10 TAM
+               "THBS1",'TRECM1',#resident tissue macrophages RTMs
+                  "CCL2", "CCL3", "CCL4", "CXCL2",#M1 TAM
+                  "CD163", "MRC1", "MS4A4", "MAF","SELENOP",'DAB2',#M2 TAM
+                "IFIT1","IFIT2","IFIT3",#IFN TAM
+                "MT1G","MT2A",##MT TAM
+                "HSPA1A","HSPA1B","BAG3")),
+  DC=unique(c('CST3',"FCER1A",#DC and mono
+                  "CD1C",'FCER1A','HLA-DRA','HLA-DPB1','HLA-DPA1',#DC
+                  'CD1E','CD1C','FCER1A','HLA-DPB1','HLA-DQB1','CLEC10A','HLA-DQA2',#cDC2
+                  "CD74",##DC and B
+              'XCR1','CLNK','CLEC9A',"CADM1","ENPP1","SNX22","NCALD","DBN1","HLA-DOB","PPY",#cDC1
+                  "HMSD","ANKRD33B","LAD1","CCR7","LAMP3","CCL19","CCL22","INSM1","TNNT2","TUBB2B",#cDC3
+              'LILRA4',"IRF4",'TCF4','GZMB','CLEC4C','TSPNA13'#pDC
+              )),
+  Mast=c('KIT','TPSAB1','TPSB2','CPA3','HPGDS'),#Mast
+  Neu=c("FCGR3B","CXCR2","SLC25A37","G0S2","CXCR1","ADGRG3","PROK2","STEAP4","CMTM2") ,#Neutrophils
+  Proliferation=c("MKI67","TOP2A"))
+
+
+
+myeloids = list(
+  Mac=c("C1QA","C1QB","C1QC","SELENOP","RNASE1","DAB2","LGMN","PLTP","MAF","SLCO2B1"),
+  mono=c("VCAN","FCN1","CD300E","S100A12","EREG","APOBEC3A","STXBP2","ASGR1","CCR2","NRG1"),
+  neutrophils =  c("FCGR3B","CXCR2","SLC25A37","G0S2","CXCR1","ADGRG3","PROK2","STEAP4","CMTM2" ),
+  pDC = c("GZMB","SCT","CLIC3","LRRC26","LILRA4","PACSIN1","CLEC4C","MAP1A","PTCRA","C12orf75"),
+  DC1 = c("CLEC9A","XCR1","CLNK","CADM1","ENPP1","SNX22","NCALD","DBN1","HLA-DOB","PPY"),
+  DC2=c( "CD1C","FCER1A","CD1E","AL138899.1","CD2","GPAT3","CCND2","ENHO","PKIB","CD1B"),
+  DC3 =  c("HMSD","ANKRD33B","LAD1","CCR7","LAMP3","CCL19","CCL22","INSM1","TNNT2","TUBB2B")
+)
+
+
 Neutrophil=c('AZU1','CSF3R','S100A8','S100A9','TPSAB1','CPA3','KIT')
 Mast_cell=c('KIT','IL1RL1','MS4A2','CPA3') ## CXCL8,CXCL2,髓系（中性粒、肥大）、内皮均可炎性状态释放；CSF1R髓系祖细胞起源的细胞标志物
 Macrophage=c('CD68','CD14','FCGR3A','MARCO','C1QC','SPP1')
