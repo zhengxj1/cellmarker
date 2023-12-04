@@ -1,13 +1,25 @@
+肿瘤相关
 Tumor pan-CK KI67
+
+内皮相关
 Endothelial CD31
+
+成纤维相关
 CAF aSMA FAP
+
+免疫相关
+淋巴系
 immune check point PD-1 PD-L1
-Tcell CD3 CD4 GZMB #GZMB是细胞毒性T细胞和NK细胞marker
-Treg FOXP3
+Tcell CD3（T细胞） CD4（辅助性T细胞） CD8（杀伤性T细胞）FOXP3(Treg) GZMB #GZMB是细胞毒性T细胞和NK细胞marker 
+
 NK CD56 CD57
+B细胞 CD20
+淋巴系检测组合：CD4 CD8 CD20 FOXP3 CK GZMB
+
+髓系
 Mono CD14 CD11b
-Maco CD68 CD163 #CD68是单核和巨噬细胞标志物
-DC CD11c
+Maco CD68（最常用） CD163（M2） CD206(M2) #CD68是单核和巨噬细胞标志物
+DC CD21(树突细胞) CD11c CD23(滤泡树突细胞)
 Neutrophils CD66b
 Mast CD117
 MDSC S100A9
@@ -15,3 +27,5 @@ MDSC S100A9
 CTLA4 /CD152 一种重要的免疫抑制受体，它在免疫系统中起到关键的调节作用。CTLA-4属于免疫球蛋白超家族，并广泛表达在T淋巴细胞表面。
 OX40/CD134 是一种T细胞的共刺激受体，广泛表达在激活的CD4+和CD8+ T细胞表面，以及一些调节性T细胞（Treg）中。
 CD276/B7-H3 是一种免疫调节蛋白，通常表达在抗原提呈细胞、肿瘤细胞和某些非免疫细胞上。
+基质相关
+collagen I（I型胶原蛋白）
