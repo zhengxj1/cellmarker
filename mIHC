@@ -23,9 +23,13 @@ DC CD21(树突细胞) CD11c CD23(滤泡树突细胞)
 Neutrophils CD66b
 Mast CD117
 MDSC S100A9
+破骨细胞 CTSK
 常用的免疫微环境检测靶点组合：T细胞标记物CD3和CD8、免疫抑制受体PD-1及其配体PD-L1、肿瘤标记物Keratin(细胞角蛋白，CK18)、Treg(调节性T)细胞标志物FoxP3、Arginase-1、Granzyme B。
 CTLA4 /CD152 一种重要的免疫抑制受体，它在免疫系统中起到关键的调节作用。CTLA-4属于免疫球蛋白超家族，并广泛表达在T淋巴细胞表面。
 OX40/CD134 是一种T细胞的共刺激受体，广泛表达在激活的CD4+和CD8+ T细胞表面，以及一些调节性T细胞（Treg）中。
 CD276/B7-H3 是一种免疫调节蛋白，通常表达在抗原提呈细胞、肿瘤细胞和某些非免疫细胞上。
 基质相关
 collagen I（I型胶原蛋白）
+
+骨肉瘤细胞类型组合
+collagenI/RUNX2/aSMA/CD31/OPN/CTSK
