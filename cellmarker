@@ -49,13 +49,14 @@ fibro=c("COL1A1",#all,but not special
 proliferatingfeature=c("MKI67",'TOP2A')
 mylblast=c("MYLPF")
 muscle="NCAM1"
-general=c("RUNX2","COL1A1","IBSP","ACAN","COL2A1",'ALPL','SPP1',#Osteoblastic and chondroblastic cells 
+general=c("RUNX2","IBSP","ACAN","COL2A1","SOX9",'ALPL','SPP1',#Osteoblastic and chondroblastic cells 
           "CTSK","MMP9",
-          "DCN","LUM",
+          "COL1A1","DCN","LUM","FAP",
+          "ACTA2","RGS5", "PDGFRB","CXCL12","SFRP2",
           "CD3D","NKG7",
           "CD14","C1QA",
-          "CD79A",
+          "CD79A","MS4A1","MZB1",
           "PECAM1","VWF",
-          "CXCL12","SFRP2",
-          "ACTA2","RGS5", "PDGFRB"
-          )
+          "MYOG","TNNT2","MYL1",
+          "MKI67","TOP2A"
+)
