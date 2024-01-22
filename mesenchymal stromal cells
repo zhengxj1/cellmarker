@@ -6,17 +6,21 @@ MSCs=c('LEPR',
   'MCAM', #CD146 MSC, pericite
   'NGFR' #CD271 MSC and Cancer stem cell
    )
-Pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #perivascular-like cells,maybe also called CAF
+Pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #
 
-CAFs=c("COL1A1",#all,but not special   'MMP2'不能鉴定亚型
-        "MKI67",#proliferating CAF
-        "ACTA2",'MYH11','TAGLN','CNN1',"PDGFRB","FN1",##myCAF 可继续分 DES+ and MFAP5+ myofibroblasts ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
-        'IL6', 'IL1B', "CXCL12","CXCL13",#'COX2',inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
-        "FAP","LUM",'FGF7',"PDGFRA",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
+CAFs=c(  #all,but not special   'MMP2'不能鉴定亚型
+        "FAP","LUM",'MATN',"PDGFRA","MFAP5",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
+        "MKI67","TOP2A","STMN1",#proliferating CAF
+        "PLA2G2A","CFD","APOD","CXCL14",#Inflammatory CAFs (iCAFs)  'IL6', 'IL1B', "CXCL12","CXCL13",#'COX2',inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
+        "ENO1","BNIP3","GAPDH",#Tumour-like CAFs (tCAFs) stress-response-associated genes (e.g., ENO1), and GAPDH
+        "ACTA2",'MYH11','TAGLN','ACTG2',## myoCAF
+        "RGS5","PDGFRB","MCAM","THY1",##perivascular-like cells,maybe also called CAF 可继续分 DES+ and MFAP5+ myofibroblasts ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
         "MCAM",'CD34','PECAM1',##vCAF 
-        "HLA-DRA","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
+        ##"BICC1","CCN1",'PDE4D',
+        "HLA-DRA","HLA-DRB1","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
         'PLIN2','FABP4' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
          )#fibo
+
 Normal_fibroblast=c('COL1A1','DCN','THY1')
 
 MSCmarker=unique(c(MSCs,Pericyte,CAFs,Normal_fibroblast))
