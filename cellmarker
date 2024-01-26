@@ -59,8 +59,8 @@ general=c("RUNX2","IBSP","ACAN","COL2A1","SOX9",'ALPL','SPP1',#Osteoblastic and 
           "CD79A","MS4A1","MZB1",
           "PECAM1","VWF",
           "MYOG","TNNT2","MYL1",
-          "MKI67","TOP2A"
-)
+          "MKI67","TOP2A")
+markers=general
 
 general=["RUNX2","IBSP","ACAN","COL2A1","SOX9",'ALPL','SPP1',#Osteoblastic and chondroblastic cells 
           "CTSK","MMP9",
