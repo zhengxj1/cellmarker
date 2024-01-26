@@ -11,3 +11,12 @@ endothelial=c("PECAM1","CDH5",'CLDN5','ERG',"CD34","VWF","PLVAP",##general ECmar
              'MKI67','TOP2A')##endo
 markers=endothelial
 FeaturePlot(scRNA_harmony,features = endothelial)
+
+endothelial=["PECAM1","CDH5",'CLDN5','ERG',"CD34","VWF","PLVAP",##general ECmarker
+             "CCL21", "PROX1",#lymphatic ECs; LECs
+             "HEY1", "IGFBP3",  #arteries
+             "CD36","CA4",'CYB5A','PRX',#capillaries 毛细血管
+              "APLNR",'KDR','VWA1','COL4A1','COL4A2', #angiogenic
+             'ACKR1',#veins
+             'MKI67','TOP2A']##endo
+marker_genes=endothelial
