@@ -11,8 +11,7 @@ Pericyte=c("ACTA2","RGS5","MCAM", "PDGFRB","MYH11")  #
 
 
 marker_genes=['COL1A1', #all,but not special   'MMP2'不能鉴定亚型
-        "FAP","LUM",'MATN',"PDGFRA","MFAP5",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
-        "MKI67","TOP2A","STMN1",#proliferating CAF
+        "FAP","LUM","PDGFRA","MFAP5",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
         "PLA2G2A","CFD","APOD","CXCL14",#Inflammatory CAFs (iCAFs)  'IL6', 'IL1B', "CXCL12","CXCL13",#'COX2',inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
         "ENO1","BNIP3","GAPDH",#Tumour-like CAFs (tCAFs) stress-response-associated genes (e.g., ENO1), and GAPDH
         "ACTA2",'MYH11','TAGLN','ACTG2',## myoCAF
@@ -20,10 +19,23 @@ marker_genes=['COL1A1', #all,but not special   'MMP2'不能鉴定亚型
         "MCAM",'CD34','PECAM1',##vCAF 
         ##"BICC1","CCN1",'PDE4D',
         "HLA-DRA","HLA-DRB1","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
-        'PLIN2','FABP4','MKI67','TOP2A' ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
-         ]
+        'PLIN2','FABP4', ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
+        "MKI67","TOP2A","STMN1",#proliferating CAF  
+]
 Normal_fibroblast=c('COL1A1','DCN','THY1')
 
 MSCmarker=unique(c(MSCs,Pericyte,CAFs,Normal_fibroblast))
 
 Osteocyte=c("ALPL")
+markers=c('COL1A1', #all,but not special   'MMP2'不能鉴定亚型
+        "FAP","LUM","PDGFRA","MFAP5",#FAP CAF,非常重要matrix fobro involved in the remodeling of the extracellular matrix (ECM) promoting tumor cell invasion and metastasis by modifying the ECM structure and composition
+        "PLA2G2A","CFD","APOD","CXCL14",#Inflammatory CAFs (iCAFs)  'IL6', 'IL1B', "CXCL12","CXCL13",#'COX2',inflamatory CAF  promote tumor growth and metastasis by creating an inflammatory microenvironment
+        "ENO1","BNIP3","GAPDH",#Tumour-like CAFs (tCAFs) stress-response-associated genes (e.g., ENO1), and GAPDH
+        "ACTA2",'MYH11','TAGLN','ACTG2',## myoCAF
+        "RGS5","PDGFRB","MCAM","THY1",##perivascular-like cells,maybe also called CAF 可继续分 DES+ and MFAP5+ myofibroblasts ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
+        "MCAM",'CD34','PECAM1',##vCAF 
+        ##"BICC1","CCN1",'PDE4D',
+        "HLA-DRA","HLA-DRB1","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
+        'PLIN2','FABP4', ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
+        "MKI67","TOP2A","STMN1"#proliferating CAF  
+        )
