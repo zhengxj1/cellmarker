@@ -34,7 +34,7 @@ markers=c('COL1A1', #all,but not special   'MMP2'不能鉴定亚型
         "ACTA2",'MYH11','TAGLN','ACTG2',## myoCAF
         "RGS5","PDGFRB","MCAM","THY1",##perivascular-like cells,maybe also called CAF 可继续分 DES+ and MFAP5+ myofibroblasts ACTA2为αSMA involved in the production of extracellular matrix (ECM) proteins  leading to fibrosis in the tumor microenvironment
         "MCAM",'CD34','PECAM1',##vCAF 
-        ##"BICC1","CCN1",'PDE4D',
+        "BICC1","CCN1",'PDE4D',
         "HLA-DRA","HLA-DRB1","CD74", ###Antigen-presenting CAFs,play a role in the immune response to tumors by presenting tumor antigens to T cells
         'PLIN2','FABP4', ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
         "MKI67","TOP2A","STMN1"#proliferating CAF  
