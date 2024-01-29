@@ -1,0 +1,11 @@
+BC
+markers=c("EPCAM","KRT8","KRT18","KRT5","CDH1",
+"COL1A1","DCN","LUM","FAP",
+          "ACTA2","RGS5", "PDGFRB","CXCL12","SFRP2",
+          "CD3D","NKG7",
+          "CD14","C1QA",
+          "CD79A","MS4A1","MZB1",
+          "PECAM1","VWF",
+          "MYOG","TNNT2","MYL1",
+          "MKI67","TOP2A"
+)
