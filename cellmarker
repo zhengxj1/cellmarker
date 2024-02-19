@@ -68,7 +68,7 @@ general=["RUNX2","IBSP","ACAN","COL2A1","SOX9",'ALPL','SPP1',#Osteoblastic and c
           "ACTA2","RGS5", "PDGFRB","CXCL12","SFRP2",
           "CD3D","NKG7",
           "CD14","C1QA",
-          'KIT','TPSAB1' , 'TPSB2',
+          'KIT','TPSAB1' , 'TPSB2','CPA3',
           'CD19',"CD79A","MS4A1",
           "MZB1",'SDC1','JCHAIN',#plasma also CD79A
           "PECAM1","VWF","CD31","CD34",
