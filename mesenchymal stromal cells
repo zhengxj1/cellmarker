@@ -42,3 +42,25 @@ markers=c('COL1A1', #all,but not special   'MMP2'不能鉴定亚型
         'PLIN2','FABP4', ###Lipid-droplet-accumulating CAFs lipid metabolism contribute to tumor growth and metastasis by providing energy-rich metabolites
         "MKI67","TOP2A","STMN1"#proliferating CAF  
         )
+marker_genes=list(
+  common=c('S100A4',"LUM",'DCN',"DPT", "IGFBP5", "IGFBP6"),#all,but not special   'MMP2'不能鉴定亚型
+  Pericyte=c("RGS5","PDGFRB",'COL4A1',"THY1"),
+  mCAF=c("FAP","MMP11",'COL1A1','COL11A1','POSTN','FN1','VCAN','COMP'),
+  myoCAF=c("ACTA2",'MYH11','TAGLN','ACTG2','MYL9','TPM1','TPM2',"MCAM"),## myoCAF 伤口愈合基因 contractile proteins
+  iCAF=c("CXCL14",'ADAMDEC1',#colitis
+         "MFAP5","CFD","APOD","C3","IGF1","ITM2A","PLA2G2A",'FBLN2',
+         "CXCL1","CXCL3","CXCL8","IL6",'IL1B','CXCL2','CXCL8','CCL2','CCL8',
+         "CXCL12", "SMOC2", "C7", "FBLN5", "MFAP4","FMO2"),
+  vCAF=c('PLVAP','CD34','PECAM1'),
+  rCAF=c("CCL19","CCL21"),#网状CAF（rCAFs） 淋巴组织
+  pCAD=c("MKI67","TOP2A","STMN1"),#proliferating CAF 
+  apCAF=c("HLA-DRA","HLA-DRB1","CD74") , ###Antigen-presenting CAFs, MHC II分子
+  ifnCAF=c("CXCL9","CXCL10","CXCL11","IDO1"),#干扰素刺激
+  pnCAF=c("S100B","GPM6B","PLP1",'LG14'),
+  epiCAF=c('TM4SF1','KRT19',"KRT18"),
+  hspCAF=c("HSPA1A","HSPA1B","JUN"),
+  others=c('HOPX',"SFRP4","SFRP2",
+           'PLIN2','FABP4', ###Lipid-droplet-accumulating CAFs lipid metabolism 
+           "ENO1","BNIP3","GAPDH",#Tumour-like CAFs (tCAFs) stress-response-associated genes (e.g., ENO1), and GAPDH
+            "BICC1","CCN1",'PDE4D')
+              )
