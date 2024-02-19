@@ -70,5 +70,5 @@ general=["RUNX2","IBSP","ACAN","COL2A1","SOX9",'ALPL','SPP1',#Osteoblastic and c
           "CD14","C1QA",'KIT',
           "CD79A","MS4A1","MZB1",'SDC1','JCHAIN',
           "PECAM1","VWF",
-          "MYOG","TNNT2","MYL1",
+          "MYOG","TNNT2","MYL1",'MYLPF',
           "MKI67","TOP2A"]
