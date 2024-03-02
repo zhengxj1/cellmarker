@@ -30,13 +30,23 @@ Meloidcell=list(
 
 
 myeloids = list(
-  Mac=c("C1QA","C1QB","C1QC","SELENOP","RNASE1","DAB2","LGMN","PLTP","MAF","SLCO2B1"),
-  mono=c("VCAN","FCN1","CD300E","S100A12","EREG","APOBEC3A","STXBP2","ASGR1","CCR2","NRG1"),
+  Mast=c('KIT','TPSAB1','CPA3'),
+  Macro_CIQC=c("C1QA","C1QB","C1QC",'APOE'),
+  Macro_LYVE1=c('LYVE1','PLTP','SEPP1'),
+  Macro_NLRP3=c('NLRP3','EREG','IL1B'),
+  Macro_INHBA=c('INHBA','IL1RN','CCL4'),
+  Macro_SPP1=c('SPP1'),
+  Macro_VCAN=c('VCAN'),
+  Macro_ISG15=c('ISG15'),
+  Macro_FN1=c('FN1'),
+  Mono_CD14=c("FCN1","S100A8","S100A9"),
+  Mono_CD16=c('FCGR3A','LST1','LILRB2'),
   neutrophils =  c("FCGR3B","CXCR2","SLC25A37","G0S2","CXCR1","ADGRG3","PROK2","STEAP4","CMTM2" ),
-  pDC = c("GZMB","SCT","CLIC3","LRRC26","LILRA4","PACSIN1","CLEC4C","MAP1A","PTCRA","C12orf75"),
-  DC1 = c("CLEC9A","XCR1","CLNK","CADM1","ENPP1","SNX22","NCALD","DBN1","HLA-DOB","PPY"),
-  DC2=c( "CD1C","FCER1A","CD1E","AL138899.1","CD2","GPAT3","CCND2","ENHO","PKIB","CD1B"),
-  DC3 =  c("HMSD","ANKRD33B","LAD1","CCR7","LAMP3","CCL19","CCL22","INSM1","TNNT2","TUBB2B")
+  pDC = c("LILRA4","GZMB",'IL3RA',   "SCT","CLIC3","LRRC26","PACSIN1","CLEC4C","MAP1A","PTCRA","C12orf75"),
+  cDC1 = c('CLEC9A','FLT3','IDO1', "XCR1","CLNK","CADM1","DBN1"),
+  cDC2=c( "CD1C","FCER1A",'HLA-DQA1',"CD1E","GPAT3"),
+  cDC3 =  c("LAMP3","CCR7",'FSCN1',"HMSD","ANKRD33B","LAD1","CCL19","CCL22"),
+  oTHERS=c("SELENOP","RNASE1","DAB2","LGMN","MAF","SLCO2B1")
 )
 
 
