@@ -48,7 +48,25 @@ myeloids = list(
   cDC3 =  c("LAMP3","CCR7",'FSCN1',"HMSD","ANKRD33B","LAD1","CCL19","CCL22"),
   oTHERS=c("SELENOP","RNASE1","DAB2","LGMN","MAF","SLCO2B1")
 )
-
+myeloids = [
+  'KIT', 'TPSAB1', 'CPA3',
+  "C1QA", "C1QB", "C1QC", 'APOE',
+  'LYVE1', 'PLTP', 'SEPP1',
+  'NLRP3', 'EREG', 'IL1B',
+  'INHBA', 'IL1RN', 'CCL4',
+  'SPP1',
+  'VCAN',
+  'ISG15',
+  'FN1',
+  "FCN1", "S100A8", "S100A9",
+  'FCGR3A', 'LST1', 'LILRB2',
+  "FCGR3B", "CXCR2", "SLC25A37", "G0S2", "CXCR1", "ADGRG3", "PROK2", "STEAP4", "CMTM2",
+  "LILRA4", "GZMB", 'IL3RA',   "SCT", "CLIC3", "LRRC26", "PACSIN1", "CLEC4C", "MAP1A", "PTCRA", "C12orf75",
+  'CLEC9A', 'FLT3', 'IDO1', "XCR1", "CLNK", "CADM1", "DBN1",
+  "CD1C", "FCER1A", 'HLA-DQA1', "CD1E", "GPAT3",
+  "LAMP3", "CCR7", 'FSCN1', "HMSD", "ANKRD33B", "LAD1", "CCL19", "CCL22",
+  "SELENOP", "RNASE1", "DAB2", "LGMN", "MAF", "SLCO2B1"
+]
 
 Neutrophil=c('AZU1','CSF3R','S100A8','S100A9','TPSAB1','CPA3','KIT')
 Mast_cell=c('KIT','IL1RL1','MS4A2','CPA3') ## CXCL8,CXCL2,髓系（中性粒、肥大）、内皮均可炎性状态释放；CSF1R髓系祖细胞起源的细胞标志物
