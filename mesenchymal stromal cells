@@ -64,3 +64,29 @@ marker_genes=list(
            "ENO1","BNIP3","GAPDH",#Tumour-like CAFs (tCAFs) stress-response-associated genes (e.g., ENO1), and GAPDH
             "BICC1","CCN1",'PDE4D')
               )
+marker_genes=["RGS5", "PDGFRB", "COL4A1", "THY1",
+"ACTA2", "MYH11", "TAGLN", "ACTG2", "MYL9", "TPM1", "TPM2", "MCAM",
+"FAP", "MMP11", "COL1A1", "COL11A1", "POSTN", "FN1", "VCAN", "COMP",
+"CXCL14", "ADAMDEC1", "MFAP5", "CFD", "APOD", "C3", "IGF1", "ITM2A", "PLA2G2A", "FBLN2", "CXCL1", "CXCL3", "CXCL8", "IL6", 
+"IL1B", "CXCL2", "CXCL8", "CCL2", "CCL8", "CXCL12", "SMOC2", "C7", "FBLN5", "MFAP4", "FMO2",
+"PLVAP", "CD34", "PECAM1"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
