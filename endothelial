@@ -4,19 +4,21 @@ scRNA_harmony$Endothelial_cell<- apply(scRNA_harmony@assays$RNA@data[rownames(sc
 
 endothelial=c("PECAM1","CDH5",'CLDN5','ERG',"CD34","VWF","PLVAP",##general ECmarker
              "CCL21", "PROX1",#lymphatic ECs; LECs
-             "HEY1", "IGFBP3",  #arteries
-             "CD36","CA4",'CYB5A','PRX',#capillaries 毛细血管
-              "APLNR",'KDR','VWA1','COL4A1','COL4A2', #angiogenic
-             'ACKR1',#veins
+             "MT1X", "MT1E","MT2A",  #Hypoxia
+             "HEY1", "IGFBP3", 'GJA5','FBLN5','GJA4', #arteries
+             "CD36","CA4",'RGCC','CYB5A','PRX',#capillaries 毛细血管
+              'COL4A1','KDR','ESM1',"APLNR",'VWA1','COL4A2', #TIP
+             'ACKR1','SELP','CLU',#veins
              'MKI67','TOP2A')##endo
 markers=endothelial
 FeaturePlot(scRNA_harmony,features = endothelial)
 
 endothelial=["PECAM1","CDH5",'CLDN5','ERG',"CD34","VWF","PLVAP",##general ECmarker
-             "CCL21", "PROX1",'LYVE1',#lymphatic ECs; LECs
-             "HEY1", "IGFBP3",  #arteries
-             "CD36","CA4",'CYB5A','PRX',#capillaries 毛细血管
-              "APLNR",'KDR','VWA1','COL4A1','COL4A2', #angiogenic
-             'ACKR1','SELP',#veins
+             "CCL21", "PROX1",#lymphatic ECs; LECs
+             "MT1X", "MT1E","MT2A",  #Hypoxia
+             "HEY1", "IGFBP3", 'GJA5','FBLN5','GJA4', #arteries
+             "CD36","CA4",'RGCC','CYB5A','PRX',#capillaries 毛细血管
+              'COL4A1','KDR','ESM1',"APLNR",'VWA1','COL4A2', #TIP
+             'ACKR1','SELP','CLU',#veins
              'MKI67','TOP2A']##endo
 marker_genes=endothelial
